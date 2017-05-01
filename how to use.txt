@@ -1,0 +1,12 @@
+How to use:
+  -cd ChatGame
+  -pip install -r preinstall.txt
+  -In one terminal, mongod
+  -In another terminal, python3 main.py
+  -open 'localhost:9090' in your web browser
+In the game:
+    -Create a new user with the sign up page
+    -login with the created user
+    -Create as many users as you like for maxiumum fun 
+    -Add and remove friends or groups
+    -Start a chat with other online users 
