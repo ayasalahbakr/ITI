@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Space - X - Character Selection</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  </head>
+  <style media="screen">
+
+      @font-face {
+      font-family: 'Radio Space Bold';
+      font-style: normal;
+      font-weight: normal;
+      }
+    .char-title{
+      font-family: 'Radio Space Bold';
+      font-size: 50px;
+      color: yellow;
+      text-align: center;
+      font-weight: bold;
+    }
+    .m span,.f span, .name span{
+      font-family: 'Radio Space Bold';
+      font-size: 35px;
+      color: yellow;
+      font-weight: bold;
+    }
+    .m ,.f {
+      text-align: center
+    }
+    .name{
+      text-align: center
+    }
+
+    .f-name{
+      padding: 6px;
+    }
+    .gen{
+      height: 60px;
+    }
+    .g-img{
+      height: 388px;
+      text-align: center;
+    }
+    .nxt{
+      float: right;
+    }
+    .nxt a{
+      font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+      font-size: 15px;
+      color: yellow;
+      font-weight: bold;
+      float: right
+    }
+
+    body{
+        background-image:url(../img/background.jpg);
+        background-repeat:no-repeat;
+        background-position:center center;
+        background-attachment:fixed;
+        background-size:100%;
+        }
+
+  </style>
+  <body>
+    <div class="col-xs-12 char-title">Select Character</div>
+
+    <div class="container">
+      <div class="col-xs-12 g-img">
+        <div class="col-xs-6">
+          <label for="f-radio">
+            <img src="../img/f.jpg" width="300" height="auto" id="female" alt="f-radio" onmouseover="" style="cursor: pointer;">
+          </label>
+        </div>
+        <div class="col-xs-6">
+          <label for="m-radio">
+          <img src="../img/m.png" width="400" height="auto" id="male" alt="m-radio" onmouseover="" style="cursor: pointer;">
+         </label>
+        </div>
+      </div>
+      <div class="col-xs-12 gen">
+        <div class="col-xs-6 f">
+          <input id="f-radio"  name="gender" value="female" type="radio" >
+          <!-- <span>Female</span> -->
+        </div>
+        <div class="col-xs-6 m">
+          <input id="m-radio"  name="gender"  value="male" type="radio" >
+          <!-- <span>Male</span> -->
+        </div>
+      </div>
+      <div class="col-xs-12 name">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-4">
+          <span>Enter Your Name</span>
+        </div>
+        <div class="col-xs-4 f-name">
+          <input type="text" class="form-control" name="" id ="name" value="">
+        </div>
+        <a href="../levels/levels.html">
+          <img id="nxt" src="../img/nxt.png" width="50" height="50" alt="" onmouseover="" style="cursor: pointer;">
+        </a>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+<script type="text/javascript" src="character.js">
+
+
+</script>

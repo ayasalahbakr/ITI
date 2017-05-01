@@ -1,0 +1,21 @@
+body {
+  padding: 40px 0;
+  background: url('../img/badgesbackg.jpg') no-repeat center top fixed;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+      }
+td{
+  text-align: center;
+  height: 50px;
+  font-size: 25px;
+}
+tr{
+  text-align: center;
+}
+
+header{
+  text-align: center;
+  font-size: 44px;
+}

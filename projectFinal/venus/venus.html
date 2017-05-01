@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Space - X - Level 1 - Venus</title>
+				<style>
+					body{
+						  background-image:url(background.jpg);
+						  background-repeat:no-repeat;
+						  background-position:center center;
+						  background-attachment:fixed;
+						  background-size:100%;
+						  }
+
+							input[type=text] {
+							border:1px solid #456879;
+							border-radius:10px;
+							height: 35px;
+							width: 100px;
+							outline: none;
+							background: transparent;
+							text-transform: uppercase;
+							text-align: center;
+							font-weight: bold;
+							font-size: 36px;
+							color: white;
+						}
+						.divClass{
+							position: absolute;
+							text-align: center;
+							bottom: 10px;
+							vertical-align: center;
+							width: 100%;
+						}
+
+						p {
+							color: white;
+							display:inline;
+							position:absolute;
+							right: 430px;
+						}
+
+
+						.modal {
+						display: none; /* Hidden by default */
+						position: fixed; /* Stay in place */
+						z-index: 1; /* Sit on top */
+						padding-top: 100px; /* Location of the box */
+						left: 0;
+						top: 0;
+						width: 100%; /* Full width */
+						height: 100%; /* Full height */
+						overflow: auto; /* Enable scroll if needed */
+						background-color: rgb(0,0,0); /* Fallback color */
+					  background-color: rgba(0,0,0,1); /* Black w/ opacity */
+				}
+
+				/* Modal Content */
+				.modal-content {
+						position: relative;
+						background-color: rgba(0,0,0,0);
+						margin: auto;
+						padding: 0;
+						border: 0px solid #888 ;
+						width: 80%;
+
+						box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.1);
+						-webkit-animation-name: animatetop;
+						-webkit-animation-duration: 0.4s;
+						animation-name: animatetop;
+						animation-duration: 0.4s
+
+
+				}
+
+				/* Add Animation */
+				@-webkit-keyframes animatetop {
+						from {top:-300px; opacity:0}
+						to {top:0; opacity:1}
+				}
+
+				@keyframes animatetop {
+						from {top:-300px; opacity:0}
+						to {top:0; opacity:1}
+				}
+
+				/* The Close Button */
+				.close {
+						color: blue;
+						float: right;
+						font-size: 50px;
+						font-weight: bold;
+				}
+
+				.close:hover,
+				.close:focus {
+						color: red;
+						text-decoration: none;
+						cursor: pointer;
+				}
+
+				.modal-body {
+				padding: 2px 16px;
+				color:black;
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				background-size: cover;
+				text-align:center;
+				}
+
+
+
+				</style>
+	</head>
+
+<body>
+	<!-- The Modal -->
+<div id="gameover" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+
+    </div>
+    <div class="modal-body">
+  		<img src="gameover.jpg" width="50%"/>
+		  </div>
+
+  </div>
+</div>
+
+<div id="fact1" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+
+    </div>
+    <div class="modal-body">
+
+			<p>Venus Fact 1<br>
+
+				Diameter:	12,104 km<br>
+				Mass:	4.87 x 10^24 kg (81.5% Earth)<br>
+				Moons:	None<br>
+			Orbit Distance:	108,209,475 km (0.73 AU)<br>
+				Orbit Period:	225 days<br>
+				Surface Temperature:	462 °C<br>
+				First Record:	17th century BC<br>
+			Recorded By:	Babylonian astronomers </p>
+  </div>
+  </div>
+</div>
+
+<div id="fact2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+
+    </div>
+    <div class="modal-body">
+			<p>Venus Fact 2 <br>
+
+				Venus does not have any moons or rings.<br>
+				Venus is nearly as big as the Earth with a diameter of 12,104 km.<br>
+				Venus is thought to be made up of a central iron core, rocky mantle and silicate crust.<br>
+				A day on the surface of Venus (solar day) would appear to take 117 Earth days<br>
+				A year on Venus takes 225 Earth days.<br>
+				The surface temperature on Venus can reach 471 °C.</p>
+		</div>
+
+  </div>
+
+</div>
+
+	<div  class="divClass">
+		<input type="text" id="userInput" autofocus>
+		<p id="inptdiv"></p>
+	</div>
+	<script src="venus.js" type="text/javascript"> </script>
+</body>
+</html>
